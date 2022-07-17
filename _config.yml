@@ -4,10 +4,10 @@
 # ---------------------------------------------------------------
 
 # Site
-title: zhuoyue2
-subtitle: zhuoyue2s Blog
+title: kangbingjie
+subtitle: Jay Blog
 description: 每天进步一小步!
-author: zhuoyue2
+author: kangbingjie
 # Support language: de, en, fr-FR, id, ja, ko, pt-BR, pt, ru, zh-Hans, zh-hk, zh-tw
 language: zh-Hans
 date_format: '%Y-%m-%d'
@@ -78,7 +78,7 @@ plugins:
 favicon: /assets/images/favicon.ico
 
 # Set default keywords (Use a comma to separate)
-keywords: "iOS, kangbing, korbin"
+keywords: "python html c/c++ kangbingjie Jay Linux Mysql"
 
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
@@ -214,7 +214,7 @@ font:
 # Value is the target link (E.g. GitHub: https://github.com/iissnan)
 social:
   GitHub: https://github.com/zhuoyue2
-  Twitter:  https://github.com/zhuoyue2
+  
 
 
 # Social Links Icons
@@ -227,8 +227,7 @@ social_icons:
   # Icon Mappings.
   # KeyMapsToSocialItemKey: NameOfTheIconFromFontAwesome
   GitHub: github
-  Twitter: twitter
-  Weibo: weibo
+  #Weibo: weibo
 
 
 # Sidebar Avatar
