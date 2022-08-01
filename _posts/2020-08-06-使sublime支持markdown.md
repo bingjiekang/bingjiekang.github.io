@@ -1,5 +1,5 @@
 ---
-title: "OCLint 代码自动检查"
+title: "使sublime支持markdown"
 layout: post
 date: 2020-08-06
 image: /assets/images/markdown.jpg
@@ -9,7 +9,10 @@ tag:
 category: 笔记
 ---
 
+使sublime支持markdown
+
 # 主要内容:
+
 	在sublime里安装Markdown Preview实现markdown在浏览器上的预览
 
 #### 方法：通过package control安装（若已安装，则跳过）
