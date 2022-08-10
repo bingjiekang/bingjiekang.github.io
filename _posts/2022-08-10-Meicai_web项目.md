@@ -23,7 +23,13 @@ category: 项目实践
 
 ![](https://raw.githubusercontent.com/zhuoyue2/zhuoyue2.github.io/master/assets/images/Meicai_web_Detail/Find_tool.png) 
 
-> 如果下载好Django,但是却导入不了Django包,Windows电脑需要将Django包的路径加入的电脑的环境变量中
+> 如果下载好Django,但是却导入不了Django包,Windows电脑需要将Django包和Scripts的路径加入的电脑的环境变量中  
+	（前面每个人的路径不一样，重点是找到LocalCache\local-packages\Python38\Scripts和site-packages\django)
 
+	C:\Users\94284\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\Scripts  
+
+	C:\Users\94284\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\django
+
+#### 3.项目搭建
 
 
