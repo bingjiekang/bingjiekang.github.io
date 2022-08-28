@@ -9,7 +9,7 @@ tag:
 category: 笔记
 ---
 
-##使sublime支持markdown
+## 使sublime支持markdown
 
 # 主要内容:
 

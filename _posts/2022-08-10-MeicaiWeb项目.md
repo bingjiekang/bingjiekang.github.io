@@ -15,6 +15,27 @@ category: 项目实践
 > 2.利用Django写的项目  
 > 3.需要了解HTML相关语法，会使用python
 
+## 项目笔记
+
+> 1. 如果一直无法连接到数据库（ [ERROR/MainProcess] consumer: Cannot connect to redis://172.0.0.1:6379/8: Error 10060 connecting to 172.0.0.1:6379.由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。..Trying again in 10.00 seconds... (5/100)）  
+可能是地址没配置对broker="redis://127.0.0.1:6379/8"，或者通过（1）启动redis（2）切换到redis安装目录并执行redis-server.exe redis.windows.conf（4）再开一个后台，切换到安装目录，执行redis-cli.exe，然后在执行 config set requirepass root 将密码设置为 root ，然后地址配置为broker="redis://:root@127.0.0.1:6379/8"即可
+
+> 2. 切换到redis安装目录下,redis-server.exe redis.windows.conf,启动redis服务器  
+> 3. 切换到redis安装目录下,redis-cli.exe,启动客户端  
+> 4. celery -A celery_tasks.tasks worker -l info 启动celery服务   
+> 5. 如果报错  
+
+	tasks, accept, hostname = _loc ValueError: not enough values to unpack (expected 3, got 0) 
+
+> 解决方法：  
+
+	# 安装这个包
+	pip install eventlet
+	# 用这个启动
+	celery -A celery_tasks.main worker -l info -P eventlet
+
+
+
 #### 1、下载pycharm并配置好python
 #### 2、下载Django
 > 在pycharm的终端或工具栏导入Django  
@@ -31,5 +52,4 @@ category: 项目实践
 	C:\Users\94284\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\django
 
 #### 3.项目搭建
-
 
