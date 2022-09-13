@@ -44,3 +44,7 @@ category: 笔记
 
 
 > 解决方法：改为 python setup.py install --user || exit 1
+
+> 2. 查看哪个端口号被哪个程序占用 netstat -tunlp|grep 端口号
+
+> 3. 
