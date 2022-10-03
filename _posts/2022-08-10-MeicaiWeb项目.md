@@ -33,6 +33,7 @@ category: 项目实践
 	pip install eventlet
 	# 用这个启动
 	celery -A celery_tasks.main worker -l info -P eventlet
+	celery -A celery_tasks.tasks worker -l info -P eventlet
 
 
 

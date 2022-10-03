@@ -47,4 +47,9 @@ category: 笔记
 
 > 2. 查看哪个端口号被哪个程序占用 netstat -tunlp|grep 端口号
 
-> 3. 
+> 3.  报错：return value.utcoffset() is not None
+AttributeError: 'str' object has no attribute 'utcoffset'
+
+> 解决方法：里面的时间模型类对应的数据表中内容不能为0 0000-0000-0000 00:00:00 00:00:00
+
+
