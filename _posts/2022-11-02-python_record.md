@@ -1,7 +1,7 @@
 ---
 title: "记录Python一些代码及方法"
 layout: post
-date: 2022-11-01
+date: 2022-11-02
 image: /assets/images/markdown.jpg
 headerImage: false
 tag:
