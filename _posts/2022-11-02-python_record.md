@@ -17,19 +17,19 @@ category: 笔记
 
 2. 开启全部端口号
 
-  iptables -P INPUT ACCEPT  
-  iptables -P FORWARD ACCEPT  
-  iptables -P OUTPUT ACCEPT  
-  iptables -F
+	iptables -P INPUT ACCEPT  
+	iptables -P FORWARD ACCEPT  
+	iptables -P OUTPUT ACCEPT  
+	iptables -F
 
 3. nginx下载相关
 
-  下载nginx sudo apt-get install nginx  
-  nginx开启 sudo service nginx start  
-  nginx重启 sudo service nginx reload  
-  nginx关闭 sudo service nginx stop  
-  nginx看状态 sudo service nginx status  
-  nginx看能否正确执行 sudo nginx -t
+	下载nginx sudo apt-get install nginx  
+	nginx开启 sudo service nginx start  
+	nginx重启 sudo service nginx reload  
+	nginx关闭 sudo service nginx stop  
+	nginx看状态 sudo service nginx status  
+	nginx看能否正确执行 sudo nginx -t
 
 4. nginx配置
 
