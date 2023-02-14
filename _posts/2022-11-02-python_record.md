@@ -137,6 +137,9 @@ category: 笔记
 	
 	升级到最新版  
 	pip3 install pyopenssl --upgrade
+	
+8. 局部刷新 ajax
+
 		
 
 
