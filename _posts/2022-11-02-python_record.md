@@ -138,7 +138,15 @@ category: 笔记
 	升级到最新版  
 	pip3 install pyopenssl --upgrade
 	
-8. 局部刷新 ajax
+8. 局部刷新 ajax  
+9. supervisor 管理进程  
+	重启：supervisorctl reload  
+	查看状态：supervisorctl status  
+	启动：supervisord  
+	第一次启动：supervisord -c 路径  
+	关闭进程：supervisorctl stop 子进程或all  
+	开启进程：supervisorctl start 子进程或all  
+	include包含的需要执行的 用空格隔开，command后面接着写不要有空格
 
 		
 
