@@ -140,9 +140,9 @@ category: 笔记
 	
 8. 局部刷新 ajax  
 9. supervisor 管理进程  
-	安装：pip install supervisor
-	配置：echo_supervisord_conf > /路径xx(可无)/supervisord.conf
-	重启：supervisorctl reload  
+	安装：pip install supervisor  
+	配置：echo_supervisord_conf > /路径xx(可无)/supervisord.conf   
+	重启：supervisorctl reload   
 	查看状态：supervisorctl status  
 	启动：supervisord  
 	第一次启动：supervisord -c 路径  
