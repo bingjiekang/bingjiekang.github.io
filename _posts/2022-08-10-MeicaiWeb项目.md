@@ -34,6 +34,42 @@ category: 项目实践
 	# 用这个启动
 	celery -A celery_tasks.main worker -l info -P eventlet
 	celery -A celery_tasks.tasks worker -l info -P eventlet
+	
+> 东京arm重启方法
+	
+	1. 打开所有端口    
+
+	iptables -P INPUT ACCEPT
+	iptables -P FORWARD ACCEPT
+	iptables -P OUTPUT ACCEPT
+	iptables -F
+	
+	2.打开天天生鲜项目的fastdfs文件   
+	
+	先启动 /usr/bin/fdfs_trackerd /etc/fdfs/tracker.conf start  
+	再启动 /usr/bin/fdfs_storaged /etc/fdfs/storage.conf start   
+
+	3.再切换到/usr/local/nginx/sbin中打开控制上传的nginx服务  
+
+	/nginx 开启Nginx服务  
+
+	4.打开redis数据端口6379    
+
+	cd /usr/local/redis    
+	redis-server redis.conf    
+
+	5.重启控制 天天生鲜转接的 uwsgi服务器  
+
+	cd /root/MeiCai_web/Meicai_web/dailyfresh/dailyfresh    
+	uwsgi –-ini uwsgi.ini   
+
+	6.重启supervisor     
+
+	echo_supervisord_conf > /Supervisord/supervisord.conf   
+	supervisord -c /Supervisord/supervisord.conf 
+
+
+
 
 
 
