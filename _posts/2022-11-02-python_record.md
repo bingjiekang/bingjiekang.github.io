@@ -110,7 +110,7 @@ category: 笔记
 6. ssl证书配置(和Nginx一起使用）
 
 	安装：apt install certbot python3-certbot-nginx  
-	生成证书：cerbot --nginx -d 网址不带http/https  
+	生成证书：certbot --nginx -d 网址不带http/https  
 	到/etc/nginx/sites-enabled/default  
 	Django的配置文件中配置（默认已配好）
 	
